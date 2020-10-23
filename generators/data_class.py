@@ -1,7 +1,5 @@
 import os, sys
 
-print(sys.argv)
-
 
 class DataClassMaker:
     def __init__(self, name: str, attribs: list):
@@ -16,7 +14,8 @@ class DataClassMaker:
         return result
 
     def __write_definition(self):
-        name = self.__name.capitalize()
+
+        name = self.__name
 
         definition = f"""class {name}
 """
@@ -120,10 +119,10 @@ def cli(argv):
         print(HELP_TEXT)
     if command == 'make' or command == 'm':
         attrs = params.split(',')
-        print(f'Attrs: {attrs}')
         mk_data_class = DataClassMaker(class_name, attrs)
         mk_data_class.make()
 
 
 if __name__ == "__main__":
+    print("<?php\n")
     cli(sys.argv)
