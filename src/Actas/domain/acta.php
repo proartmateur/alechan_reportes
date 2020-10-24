@@ -1,4 +1,6 @@
 <?php
+namespace Reportes\Actas\Domain;
+
 include 'acta_header.php';
 include 'acta_body.php';
 include 'acta_cierre.php';
@@ -18,10 +20,10 @@ class Acta
         ActaFooter $footer
     )
     {
-         $this->header;
-         $this->body;
-         $this->cierre;
-         $this->footer;
+        $this->header;
+        $this->body;
+        $this->cierre;
+        $this->footer;
     }
 
     #region Serialize

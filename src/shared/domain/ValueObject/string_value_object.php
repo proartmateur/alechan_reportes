@@ -1,5 +1,5 @@
 <?php
-
+namespace Reportes\Shared\Domain\ValueObject;
 
 abstract class StringValueObject
 {
