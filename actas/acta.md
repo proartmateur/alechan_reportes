@@ -14,18 +14,19 @@ Las actas al final generan un PDF y un XML
 ## Body
 - body title: text
 - intro: paragraph
-- cargo de quien crea el reporte: string
+- cargo de quien crea el reporte: paragraph
 - responsiva: paragraph
-- testigos: paragraph
+- testigos: paragraph[]
 - antecedentes: paragraph[]
 - hechos: paragraphs[]
 
 
 ### Cierre
+- cierre de acta: paragraph
 - firmas: firma[]
 - anexo1: tabla de bienes - Las hojas van horizontales
 - anexo2: tabla de bienes - Las hojas van horizontales
-- cierre de acta: paragraph
+
 
 ## Footer
 imagenes_pie: image[]
@@ -75,3 +76,16 @@ Se destruyen los bienes.
  permite cerrarlo.
  Es el mismo PDF del confirmado.
  
+ # Carpetas
+ 
+ ## domain
+ Dentro de esta carpeta viven objetos que llevan a cabo las reglas de negocio(dominio)
+ Lógica de negocio. (NO HAY INTERACCIÖN CON DB)
+ 
+ ## use_cases
+ Dentro de esta carpeta viven objetos o funciones que ejecutan un caso de uso.
+ Como renders.
+ 
+ ## Persistence
+ Dentro de esta carpeta viven objetos que interactuan con
+ bases de datos o sistema de archivos io

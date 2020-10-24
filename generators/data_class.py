@@ -9,7 +9,7 @@ class DataClassMaker:
     def __make_attribs(self):
         result = ""
         for attrib in self.__attribs:
-            result += f"""    private ${attrib};
+            result += f"""    public ${attrib};
 """
         return result
 
@@ -31,7 +31,7 @@ class DataClassMaker:
             coma = ','
             if count == len(self.__attribs):
                 coma = ''
-            constructor += f'''        ${attrib} = ""{coma}
+            constructor += f'''        ${attrib}{coma}
 '''
         constructor += """    ) {
 """

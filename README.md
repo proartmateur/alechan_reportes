@@ -14,3 +14,13 @@ el proyecto. Además tenemos una limitante respecto a lo no esencial, es decir, 
 - El código deberá ser predecible, es decir, el esfuerzo mental para realizar cambios o crear nuevos tipos de reporte, debe ser muy bajo.
 - Debe permitir la creación de diferentes formatos de salida (PDF, XML, HTML, etc.)
 - Debe soportar diferentes fuentes de datos ( SQL Server, API Rest, Etc.)
+
+
+## Idiomas
+El código se redactará en Espanglish, es decir está permitido el uso 
+del idioma inglés para términos aceptados por el equipo y lo demás en español.
+
+
+
+## Pruebas
+https://sandbox.onlinephpfunctions.com/
