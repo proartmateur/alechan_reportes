@@ -32,5 +32,14 @@ $my_footer2 = new ActaFooter(
     "Para convertir en array"
 );
 
+
 $my_primitives = $my_footer2->toPrimitives();
 print_r($my_primitives);
+
+try {
+    echo inverso(5) . "\n";
+
+} catch (Exception $e) {
+    echo 'Excepción capturada: ', $e->getMessage(), "\n";
+}
+
